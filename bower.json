@@ -1,0 +1,22 @@
+{
+  "name": "sitracksite",
+  "authors": [
+    "Luis <luis.amengual@sitrack.com>"
+  ],
+  "description": "Site Service",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery-ui": "^1.12.1",
+    "font-awesome": "^4.7.0",
+    "highcharts": "^5.0.7",
+    "jquery-textcomplete": "^1.8.0",
+    "jquery-confirm2": "craftpip/jquery-confirm#^3.1.0",
+    "jquery.dynatree": "^1.2.8",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "hls.js": "^0.8.7"
+  }
+}
