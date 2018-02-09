@@ -1,0 +1,16 @@
+{
+  "name": "mycompany/myapp",
+  "description": "My Neo Application",
+  "keywords": ["framework", "neophp"],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0",
+    "neogroup/neophp": "dev-master"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
