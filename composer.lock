@@ -174,12 +174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/luismanuelamengual/NeoPHP.git",
-                "reference": "1be96f660d8f6f570aed4429e164fbb3fb36c482"
+                "reference": "022e7b5c46902e3eb49776cc55530259901a4db5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/1be96f660d8f6f570aed4429e164fbb3fb36c482",
-                "reference": "1be96f660d8f6f570aed4429e164fbb3fb36c482",
+                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/022e7b5c46902e3eb49776cc55530259901a4db5",
+                "reference": "022e7b5c46902e3eb49776cc55530259901a4db5",
                 "shasum": ""
             },
             "require": {
@@ -191,7 +191,7 @@
             "type": "library",
             "autoload": {
                 "files": [
-                    "src/NeoPHP/util/helpers.php"
+                    "src/NeoPHP/Support/Functions.php"
                 ],
                 "psr-4": {
                     "NeoPHP\\": "src/NeoPHP/"
@@ -214,7 +214,7 @@
                 "framework",
                 "php"
             ],
-            "time": "2018-02-09T15:14:34+00:00"
+            "time": "2018-02-09T19:22:54+00:00"
         },
         {
             "name": "nesbot/carbon",
