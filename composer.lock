@@ -4,8 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "2c32db2a75ad0cda36cac01b6b0d9824",
     "content-hash": "28640a7e88e984272ec4aec06da4d5df",
     "packages": [
+        {
+            "name": "filp/whoops",
+            "version": "2.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "c6081b8838686aa04f1e83ba7e91f78b7b2a23e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/c6081b8838686aa04f1e83ba7e91f78b7b2a23e6",
+                "reference": "c6081b8838686aa04f1e83ba7e91f78b7b2a23e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0",
+                "psr/log": "^1.0.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "symfony/var-dumper": "^2.6 || ^3.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://filp.github.io/whoops/",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "throwable",
+                "whoops"
+            ],
+            "time": "2017-11-23 18:22:44"
+        },
         {
             "name": "league/flysystem",
             "version": "1.0.42",
@@ -88,7 +150,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2018-01-27T16:03:56+00:00"
+            "time": "2018-01-27 16:03:56"
         },
         {
             "name": "monolog/monolog",
@@ -166,7 +228,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
+            "time": "2017-06-19 01:22:40"
         },
         {
             "name": "neogroup/neophp",
@@ -174,15 +236,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/luismanuelamengual/NeoPHP.git",
-                "reference": "022e7b5c46902e3eb49776cc55530259901a4db5"
+                "reference": "d2ff6a64254ff8b0567a62640027b3de68aec6b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/022e7b5c46902e3eb49776cc55530259901a4db5",
-                "reference": "022e7b5c46902e3eb49776cc55530259901a4db5",
+                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/d2ff6a64254ff8b0567a62640027b3de68aec6b8",
+                "reference": "d2ff6a64254ff8b0567a62640027b3de68aec6b8",
                 "shasum": ""
             },
             "require": {
+                "filp/whoops": "^2.1.4",
                 "league/flysystem": "~1.0",
                 "monolog/monolog": "~1.12",
                 "nesbot/carbon": "~1.20",
@@ -190,9 +253,6 @@
             },
             "type": "library",
             "autoload": {
-                "files": [
-                    "src/NeoPHP/Support/Functions.php"
-                ],
                 "psr-4": {
                     "NeoPHP\\": "src/NeoPHP/"
                 }
@@ -214,7 +274,7 @@
                 "framework",
                 "php"
             ],
-            "time": "2018-02-09T19:22:54+00:00"
+            "time": "2018-02-12 15:52:02"
         },
         {
             "name": "nesbot/carbon",
@@ -267,7 +327,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-01-16T07:55:07+00:00"
+            "time": "2017-01-16 07:55:07"
         },
         {
             "name": "psr/log",
@@ -314,7 +374,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -373,7 +433,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-01-30T19:27:44+00:00"
+            "time": "2018-01-30 19:27:44"
         },
         {
             "name": "symfony/translation",
@@ -441,7 +501,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-18T22:16:57+00:00"
+            "time": "2018-01-18 22:16:57"
         }
     ],
     "packages-dev": [],
