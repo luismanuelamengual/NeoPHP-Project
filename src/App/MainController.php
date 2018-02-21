@@ -9,6 +9,7 @@ use NeoPHP\Database\Query\Join;
 use NeoPHP\Database\Query\SelectQuery;
 use NeoPHP\Database\Query\UpdateQuery;
 use NeoPHP\Routing\Routes;
+use NeoPHP\Views\Views;
 
 class MainController {
 
@@ -47,6 +48,11 @@ class MainController {
             echo "Houston, tenemos un problema !!";
             echo "<pre>";
             print_r ($e);
+        });
+
+        Routes::get("view", function() {
+            $view = Views::createView("welcome", ["name"=>"Luis"]);
+            $view->render();
         });
 
         Routes::get("db", function() {
