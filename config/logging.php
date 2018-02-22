@@ -15,7 +15,7 @@ return [
             "class" => "Monolog\Handler\RotatingFileHandler",
             "level" => "DEBUG",
             "formatter" => "main_formatter",
-            "filename" => getApp()->getStoragePath() . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR . "{date}",
+            "filename" => get_app()->storagePath() . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR . "{date}",
             "maxFiles" => 30,
             "set_filename_format" => ["{date}.log", "Y-m-d"]
         ]

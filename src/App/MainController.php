@@ -2,12 +2,15 @@
 
 namespace App;
 
+use DateTime;
 use NeoPHP\Database\Databases;
+use NeoPHP\Database\DB;
 use NeoPHP\Database\Query\DeleteQuery;
 use NeoPHP\Database\Query\InsertQuery;
 use NeoPHP\Database\Query\Join;
 use NeoPHP\Database\Query\SelectQuery;
 use NeoPHP\Database\Query\UpdateQuery;
+use NeoPHP\Resources\Resources;
 use NeoPHP\Routing\Routes;
 use NeoPHP\Views\Views;
 
@@ -25,7 +28,10 @@ class MainController {
         Routes::get("users/:userId/", "App\Users\UsersController@showUser");
         Routes::post("users/:userId/", "UsersController@updateUser");
         Routes::get("users/:userId/show", "UsersController@showUser");
-        Routes::get("test/*", "App\Tests\TestController");
+
+        Routes::any("test/*", "App\Tests\TestController");
+        Routes::after("test/*", "App\Tests\TestController@post");
+
         Routes::get("test/rama", "App\Tests\TestController@ramaAction");
         Routes::any("timpla", "TimplaController");
 
@@ -50,9 +56,21 @@ class MainController {
             print_r ($e);
         });
 
+        Routes::get("timpa/*", function() {
+
+            $request = get_request();
+            $cookies = $request->getCookies();
+            echo "<br>Host: " . $request->getHost();
+            echo "<br>URI: " . $request->getUri();
+            echo "<br>Path: " . $request->getPath();
+            echo "<pre>";
+            print_r ($cookies);
+            print_r ($_SERVER);
+        });
+
         Routes::get("view", function() {
-            $view = Views::createView("welcome", ["name"=>"Luis"]);
-            $view->render();
+
+            return create_view("welcome", ["name"=>"Luis"]);
         });
 
         Routes::get("db", function() {
@@ -86,16 +104,51 @@ class MainController {
             $query->addOrderByField("userid");
             $result = getConnection()->query($query);*/
 
-            /*
-            getConnection()->getTable("person")
+
+            /*getConnection()->getTable("person")
                 ->set("name", "Jessica")
                 ->set("lastname", "Alba")
                 ->set("age", 19)
-                ->insert();
+                ->set("birthdate", new DateTime("2015-06-14 03:14:56"))
+                ->insert();*/
+
+
+            /*
+            $result = getConnection()->getTable("person")
+                ->select("personid", "lastname", "name")
+                ->where("personid", ">", 44)
+                ->orderBy("personid", "DESC")
+                ->innerJoin("\"user\"", "person.personid", "\"user\".personid")
+                ->find();
             */
 
+            /*
+            $result = DB::table ("person")
+                ->select("personid", "lastname", "name")
+                ->where("personid", ">", 42)
+                ->find();
+            */
 
-            $result = getResource("\"person\"")->find();
+            /*
+            $result = Resources::get("person")
+                ->select("personid", "lastname", "name")
+                ->innerJoin("\"user\"", "person.personid", "\"user\".personid")
+                ->orderBy("personid", "DESC")
+                ->where("personid", ">", 44)
+                ->find();
+            */
+
+            $result = Resources::get("person")
+                ->select("personid", "lastname", "name")
+                ->where("personid", ">", 44)
+                ->find();
+
+
+            //$result = getResource("\"person\"")->select("personid as pid", "name", "birthdate")->find();
+
+
+
+
 
             /*$result = getResource("\"user\"")
                 ->addInnerJoin("person", "\"user\".personid", "person.personid")
@@ -103,7 +156,6 @@ class MainController {
 */
             echo "<pre>";
             print_r ($result);
-            echo "</pre>";
         });
     }
 }
