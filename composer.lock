@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c75a923eb7c487a030270b6ddc724523",
+    "content-hash": "9929ff4cd112d4530a6854f4ce8395ec",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -506,12 +506,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/luismanuelamengual/NeoPHP.git",
-                "reference": "b83a4504c6436512a9e3ae9a18ea9d8d52ab3a54"
+                "reference": "b8f8d4f063669f059fa0716d78532dfc0c1ab28e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/b83a4504c6436512a9e3ae9a18ea9d8d52ab3a54",
-                "reference": "b83a4504c6436512a9e3ae9a18ea9d8d52ab3a54",
+                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/b8f8d4f063669f059fa0716d78532dfc0c1ab28e",
+                "reference": "b8f8d4f063669f059fa0716d78532dfc0c1ab28e",
                 "shasum": ""
             },
             "require": {
@@ -1344,9 +1344,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.0.0"
