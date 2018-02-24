@@ -5,6 +5,6 @@ return [
     "debug"=>true,
 
     "bootActions"=> [
-        "App\MainController@boot"
+        "App\MainController@main"
     ]
 ];

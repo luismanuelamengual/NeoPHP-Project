@@ -9,7 +9,7 @@ return [
             'driver' => 'pgsql',
             'host' => '127.0.0.1',
             'port' => '5432',
-            'database' => 'testdb',
+            'database' => 'main',
             'username' => 'postgres',
             'password' => 'postgres',
             'logQueries' => true
