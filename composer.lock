@@ -506,12 +506,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/luismanuelamengual/NeoPHP.git",
-                "reference": "0022ce69ad7ee7e20d58d9f96b6c88a52120be7f"
+                "reference": "d377a650946bba51e0332d4f754c4c72c51dce90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/0022ce69ad7ee7e20d58d9f96b6c88a52120be7f",
-                "reference": "0022ce69ad7ee7e20d58d9f96b6c88a52120be7f",
+                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/d377a650946bba51e0332d4f754c4c72c51dce90",
+                "reference": "d377a650946bba51e0332d4f754c4c72c51dce90",
                 "shasum": ""
             },
             "require": {
