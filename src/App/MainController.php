@@ -12,7 +12,7 @@ class MainController {
     }
 
     public function registerRoutes() {
-        Routes::get("welcome", function () {
+        Routes::get("/", function () {
             return create_view("welcome", ["name"=>"Luis"]);
         });
     }
