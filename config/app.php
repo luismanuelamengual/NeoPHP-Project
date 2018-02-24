@@ -2,7 +2,7 @@
 
 return [
 
-    "debug"=>true,
+    "debug"=>false,
 
     "bootActions"=> [
         "App\MainController@main"
