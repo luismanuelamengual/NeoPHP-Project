@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9929ff4cd112d4530a6854f4ce8395ec",
+    "content-hash": "a7f71b877251358271ecb61242214944",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -506,12 +506,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/luismanuelamengual/NeoPHP.git",
-                "reference": "628914b98b6db13dab68fd1900101b66316d3f50"
+                "reference": "5cbab59c42df6e4f2f86bb005fbeff6db919bc0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/628914b98b6db13dab68fd1900101b66316d3f50",
-                "reference": "628914b98b6db13dab68fd1900101b66316d3f50",
+                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/5cbab59c42df6e4f2f86bb005fbeff6db919bc0e",
+                "reference": "5cbab59c42df6e4f2f86bb005fbeff6db919bc0e",
                 "shasum": ""
             },
             "require": {
