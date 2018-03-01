@@ -16,8 +16,4 @@ class MainController {
             return create_view("welcome", ["name"=>get_current_user()]);
         });
     }
-
-    public function handleRequest() {
-        Routes::handleRequest();
-    }
 }
