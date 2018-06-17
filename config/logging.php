@@ -17,6 +17,7 @@ return [
             "formatter" => "main_formatter",
             "filename" => get_app()->storagePath() . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR . "{date}",
             "maxFiles" => 30,
+            "filePermission" => 777,
             "set_filename_format" => ["{date}.log", "Y-m-d"]
         ]
     ],
