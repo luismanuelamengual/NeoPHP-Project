@@ -2,9 +2,5 @@
 
 return [
 
-    "debug"=>false,
-
-    "bootActions"=> [
-        "App\MainController@main"
-    ]
+    "debug"=>false
 ];

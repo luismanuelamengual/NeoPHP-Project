@@ -2,11 +2,12 @@
 
 namespace App;
 
+use NeoPHP\Module;
 use NeoPHP\Routing\Routes;
 
-class MainController {
+class WebModule extends Module {
 
-    public function main() {
+    public function start() {
 
         Routes::get("/", function () {
             return create_view("welcome", ["name" => get_current_user()]);

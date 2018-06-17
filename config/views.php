@@ -14,5 +14,7 @@ return [
         "smarty" => [
             "class" => NeoPHP\Views\Smarty\SmartyViewFactory::class
         ]
-    ]
+    ],
+
+    "view_type_parameter_name" => "viewType"
 ];

@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+define('START_TIMESTAMP', microtime(true));
+
+require __DIR__.'/vendor/autoload.php';
+
+$app = create_app(__DIR__);
+$app->addModule(new \App\ConsoleModule());
+$app->start();
