@@ -26,12 +26,8 @@
     "optimize-autoloader": true
   },
   "scripts": {
-    "post-install-cmd": [
-      "bower install"
-    ],
-    "post-update-cmd": [
-      "bower install"
-    ]
+    "post-install-cmd": [],
+    "post-update-cmd": []
   },
   "minimum-stability": "dev",
   "prefer-stable": true
