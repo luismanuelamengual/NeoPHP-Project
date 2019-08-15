@@ -2,13 +2,13 @@
 
 return [
 
-    "debug"=>false,
+    "name" => get_env("APP_NAME", "MyApp"),
 
-    "log_errors"=>true,
+    "debug" => get_env("APP_DEBUG", false),
 
-    "email_errors"=>true,
+    "log_errors" => get_env("APP_LOG",true),
 
-    "email_error_recipients" => [
-        "administrator@gmail.com"
-    ]
+    "email_errors" => get_env("APP_MAIL_ERROR", false),
+
+    "email_error_recipients" => explode(",", get_env("APP_MAIL_RECIPIENTS"))
 ];

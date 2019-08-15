@@ -2,11 +2,17 @@
 
 return [
 
-    "default" => "main",
+    "default" => "files",
 
     'loggers' => [
-        'main' => [
+        'files' => [
             'handlers' => ["rotating_file_handler"]
+        ],
+        'stdout' => [
+            'handlers' => [ "stdout_handler" ]
+        ],
+        'stderr' => [
+            "handlers" => [ "stderr_handler" ]
         ]
     ],
 
@@ -18,6 +24,18 @@ return [
             "filename" => get_app()->storagePath() . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR . "{date}",
             "maxFiles" => 30,
             "set_filename_format" => ["{date}.log", "Y-m-d"]
+        ],
+        "stdout_handler" => [
+            "class" => "Monolog\Handler\StreamHandler",
+            "level" => "DEBUG",
+            "formatter" => "logstash_formatter",
+            "stream" => "php://stdout"
+        ],
+        "stderr_handler" => [
+            "class" => "Monolog\Handler\StreamHandler",
+            "level" => "ERROR",
+            "formatter" => "logstash_formatter",
+            "stream" => "php://stderr"
         ]
     ],
 

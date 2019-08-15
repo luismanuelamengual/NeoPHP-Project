@@ -2,14 +2,14 @@
 
 return [
 
-    "default" => "main",
+    "default" => get_env("MAIL_DEFAULT_SERVER", "main"),
 
     "servers" => [
 
         "main" => [
-            "host" => "localhost",
-            "username" => "username",
-            "password" => "password"
+            "host" => get_env("MAIL_HOST", "sitrack.com"),
+            "username" => get_env("MAIL_USERNAME", "notificaciones"),
+            "password" => get_env("MAIL_PASSWORD", "password")
         ]
     ]
 ];
