@@ -44,6 +44,10 @@ return [
             "class" => "Monolog\Formatter\LineFormatter",
             "format" => "[%datetime%] %channel%.%level_name%: %message%\n",
             'include_stacktraces' => true
+        ],
+        "logstash_formatter" => [
+            "class" => "Monolog\Formatter\LogstashFormatter",
+            "application_name" => get_env("APP_NAME","site5"),
         ]
     ]
 ];
