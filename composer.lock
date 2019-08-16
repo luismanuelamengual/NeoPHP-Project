@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd6d200ae40742f67ff07b7ac4e11ef1",
+    "content-hash": "468418adab32ba227fdea8aaf36fb61a",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -133,52 +133,6 @@
                 "whoops"
             ],
             "time": "2019-08-07T09:00:00+00:00"
-        },
-        {
-            "name": "firebase/php-jwt",
-            "version": "v5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
-                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": " 4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Firebase\\JWT\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Neuman Vong",
-                    "role": "Developer",
-                    "email": "neuman+pear@twilio.com"
-                },
-                {
-                    "name": "Anant Narayanan",
-                    "role": "Developer",
-                    "email": "anant@php.net"
-                }
-            ],
-            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
-            "homepage": "https://github.com/firebase/php-jwt",
-            "time": "2017-06-27T22:17:23+00:00"
         },
         {
             "name": "illuminate/container",
@@ -556,16 +510,16 @@
         },
         {
             "name": "neogroup/neophp",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luismanuelamengual/NeoPHP.git",
-                "reference": "24aee93863f9117291b8dda29551792861823712"
+                "reference": "3d7c95b7cdd276dfd24a702c1e46ef362e00ef63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/24aee93863f9117291b8dda29551792861823712",
-                "reference": "24aee93863f9117291b8dda29551792861823712",
+                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/3d7c95b7cdd276dfd24a702c1e46ef362e00ef63",
+                "reference": "3d7c95b7cdd276dfd24a702c1e46ef362e00ef63",
                 "shasum": ""
             },
             "require": {
@@ -573,7 +527,6 @@
                 "ext-json": "*",
                 "ext-openssl": "*",
                 "filp/whoops": "^2.1.14",
-                "firebase/php-jwt": "^5.0",
                 "php": ">=7.2",
                 "php-curl-class/php-curl-class": "^8.0",
                 "phpmailer/phpmailer": "^6.0",
@@ -606,7 +559,7 @@
                 "framework",
                 "php"
             ],
-            "time": "2019-08-15T14:13:49+00:00"
+            "time": "2019-08-15T20:25:39+00:00"
         },
         {
             "name": "nesbot/carbon",
