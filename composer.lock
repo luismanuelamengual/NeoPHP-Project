@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "00edc399ed3211a45edf05fd391ca8c0",
+    "content-hash": "9565ebeec329f43c9dac3d1ca01728d9",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -510,16 +510,16 @@
         },
         {
             "name": "neogroup/neophp",
-            "version": "4.3.5",
+            "version": "4.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luismanuelamengual/NeoPHP.git",
-                "reference": "6de4a7f867093f64b3280392d4a2cf7dbd46d829"
+                "reference": "0d43e497ec1a058a86b23121a265d440ccc5794f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/6de4a7f867093f64b3280392d4a2cf7dbd46d829",
-                "reference": "6de4a7f867093f64b3280392d4a2cf7dbd46d829",
+                "url": "https://api.github.com/repos/luismanuelamengual/NeoPHP/zipball/0d43e497ec1a058a86b23121a265d440ccc5794f",
+                "reference": "0d43e497ec1a058a86b23121a265d440ccc5794f",
                 "shasum": ""
             },
             "require": {
@@ -559,7 +559,7 @@
                 "framework",
                 "php"
             ],
-            "time": "2019-08-16T19:03:59+00:00"
+            "time": "2019-08-16T19:22:28+00:00"
         },
         {
             "name": "nesbot/carbon",
